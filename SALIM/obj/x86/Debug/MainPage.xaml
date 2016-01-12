@@ -56,7 +56,8 @@
             <TextBlock x:ConnectionId='3' Name="JudulAplikasi" 
                        Margin="0,0,140,0"
                        Text="Salim"
-                       Style="{StaticResource Judul}"/>
+                       Style="{StaticResource Judul}"
+                                                    />
             <Button x:ConnectionId='4' FontFamily="Segoe MDL2 Assets"
                     Content="&#xE700;" 
                     Background="{x:Null}" 
@@ -74,7 +75,7 @@
                    PaneBackground="#FF00AEEF" 
                    IsPaneOpen="True">
             <SplitView.Pane>
-                <ListBox SelectionMode="Single" 
+                <ListBox SelectionMode="Single"
                          Background="{x:Null}">
                     <ListBoxItem>
                         <StackPanel Orientation="Horizontal">

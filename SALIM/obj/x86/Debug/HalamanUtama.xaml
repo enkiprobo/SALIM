@@ -28,6 +28,7 @@
                         <Setter Target="Kalendar.(Grid.ColumnSpan)" Value="3" />
                         <Setter Target="Hadist.(Grid.RowSpan)" Value="1" />
                         <Setter Target="Hadist.(Grid.ColumnSpan)" Value="3" />
+                        <Setter Target="KataAjakan.(Grid.ColumnSpan)" Value="2" />
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState>
@@ -48,6 +49,7 @@
                         <Setter Target="Kalendar.(Grid.ColumnSpan)" Value="3" />
                         <Setter Target="Hadist.(Grid.RowSpan)" Value="1" />
                         <Setter Target="Hadist.(Grid.ColumnSpan)" Value="3" />
+                        <Setter Target="KataAjakan.(Grid.ColumnSpan)" Value="2" />
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState>
@@ -68,6 +70,7 @@
                         <Setter Target="Kalendar.(Grid.ColumnSpan)" Value="1" />
                         <Setter Target="Hadist.(Grid.RowSpan)" Value="3" />
                         <Setter Target="Hadist.(Grid.ColumnSpan)" Value="1" />
+                        <Setter Target="KataAjakan.(Grid.ColumnSpan)" Value="1" />
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState>
@@ -88,37 +91,63 @@
                         <Setter Target="Kalendar.(Grid.ColumnSpan)" Value="1" />
                         <Setter Target="Hadist.(Grid.RowSpan)" Value="3" />
                         <Setter Target="Hadist.(Grid.ColumnSpan)" Value="1" />
+                        <Setter Target="KataAjakan.(Grid.ColumnSpan)" Value="1" />
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="260" />
+            <RowDefinition Height="40"/>
             <RowDefinition />
         </Grid.RowDefinitions>
         <Image Source="Assets/bg header langit bintang.png" 
                Margin="10,0,10,10" 
                Stretch="Fill"/>
-        <StackPanel Canvas.ZIndex="1"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center">
-            <TextBlock Text="Lorem" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Foreground="White" />
-            <TextBlock Text="ipsum" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Foreground="White" />
-            <TextBlock Text="dolor" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Foreground="White" />
-        </StackPanel>
-        <Image Grid.RowSpan="3" HorizontalAlignment="Left" VerticalAlignment="Bottom" Source="Assets/bg header icon.png" Width="100" Height="100" Margin="10,0,0,307" />
+        <RelativePanel Canvas.ZIndex="2"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+            <TextBlock x:ConnectionId='7' Name="HariIni" 
+                       Text="Tanggal" 
+                       TextAlignment="Center" 
+                       Foreground="White" 
+                       RelativePanel.Above="JamSholat"
+                       RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+            <TextBlock x:ConnectionId='8' Name="JamSholat" 
+                       Text="jamnya" 
+                       TextAlignment="Center" 
+                       Foreground="White" 
+                       RelativePanel.Above="NamaSholat"
+                       RelativePanel.AlignHorizontalCenterWithPanel="True"
+                       Margin="0,5,0,30"
+                       />
+            <TextBlock x:ConnectionId='9' Name="NamaSholat"
+                       Text="Sholatnya" 
+                       TextAlignment="Center" 
+                       Foreground="White"
+                       RelativePanel.AlignVerticalCenterWithPanel="True"
+                       RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+        </RelativePanel>
+        <RelativePanel Canvas.ZIndex="1"
+                       Grid.RowSpan="2">
+            <Image Stretch="Fill" 
+                   Width="100" 
+                   Height="100" 
+                   RelativePanel.AlignBottomWithPanel="True"
+                   RelativePanel.AlignLeftWithPanel="True" Source="Assets/bg header icon.png" Margin="10,0,0,5"/>
+            
+        </RelativePanel>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock Text="Yuk, Salat tepat waktu!" 
+            <TextBlock x:ConnectionId='6' Name="KataAjakan" 
+                       Text="Yuk, Salat tepat waktu!" 
                        Margin="0,5,0,0" 
                        HorizontalAlignment="Center" 
                        VerticalAlignment="Bottom" />
-
         </Grid>
         <ScrollViewer VerticalScrollBarVisibility="Auto"
                       Grid.Row="2">
@@ -138,7 +167,7 @@
                             Margin="10">
                     <RelativePanel Margin="0,0,0,10" 
                                    Background="White">
-                        <Image x:ConnectionId='9' Name="ShubuhIkon"
+                        <Image x:ConnectionId='5' Name="ShubuhIkon"
                                Margin="3,3,0,3"
                                Source="Assets/icon malam.png" 
                                Width="40" 
@@ -147,82 +176,6 @@
                         <TextBlock Text="Shubuh"
                                    Margin="10,0,0,0"
                                    RelativePanel.RightOf="ShubuhIkon"
-                                   RelativePanel.AlignVerticalCenterWithPanel="True" />
-                        <TextBlock Text="Waktunya" 
-                                   Margin="0,0,10,0"
-                                   HorizontalAlignment="Center" 
-                                   VerticalAlignment="Center" 
-                                   RelativePanel.AlignRightWithPanel="True" 
-                                   RelativePanel.AlignVerticalCenterWithPanel="True"/>
-                    </RelativePanel>
-                    <RelativePanel Margin="0,0,0,5" 
-                                   Background="White">
-                        <Image x:ConnectionId='8' Name="DzuhurIkon"
-                               Margin="5,0,0,0"
-                               Source="Assets/icon malam.png" 
-                               Width="30" 
-                               Height="30" 
-                               RelativePanel.AlignLeftWithPanel="True"/>
-                        <TextBlock Text="Dzuhur"
-                                   Margin="10,0,0,0"
-                                   RelativePanel.RightOf="DzuhurIkon"
-                                   RelativePanel.AlignVerticalCenterWithPanel="True" />
-                        <TextBlock Text="Waktunya" 
-                                   Margin="0,0,10,0"
-                                   HorizontalAlignment="Center" 
-                                   VerticalAlignment="Center" 
-                                   RelativePanel.AlignRightWithPanel="True" 
-                                   RelativePanel.AlignVerticalCenterWithPanel="True"/>
-                    </RelativePanel>
-                    <RelativePanel Margin="0,0,0,10" 
-                                   Background="White">
-                        <Image x:ConnectionId='7' Name="AsharIkon"
-                               Margin="5,0,0,0"
-                               Source="Assets/icon malam.png" 
-                               Width="30" 
-                               Height="30" 
-                               RelativePanel.AlignLeftWithPanel="True"/>
-                        <TextBlock Text="Ashar"
-                                   Margin="10,0,0,0"
-                                   RelativePanel.RightOf="AsharIkon"
-                                   RelativePanel.AlignVerticalCenterWithPanel="True" />
-                        <TextBlock Text="Waktunya" 
-                                   Margin="0,0,10,0"
-                                   HorizontalAlignment="Center" 
-                                   VerticalAlignment="Center" 
-                                   RelativePanel.AlignRightWithPanel="True" 
-                                   RelativePanel.AlignVerticalCenterWithPanel="True"/>
-                    </RelativePanel>
-                    <RelativePanel Margin="0,0,0,10" 
-                                   Background="White">
-                        <Image x:ConnectionId='6' Name="MaghribIkon"
-                               Margin="5,0,0,0"
-                               Source="Assets/icon malam.png" 
-                               Width="30" 
-                               Height="30" 
-                               RelativePanel.AlignLeftWithPanel="True"/>
-                        <TextBlock Text="Maghrib"
-                                   Margin="10,0,0,0"
-                                   RelativePanel.RightOf="MaghribIkon"
-                                   RelativePanel.AlignVerticalCenterWithPanel="True" />
-                        <TextBlock Text="Waktunya" 
-                                   Margin="0,0,10,0"
-                                   HorizontalAlignment="Center" 
-                                   VerticalAlignment="Center" 
-                                   RelativePanel.AlignRightWithPanel="True" 
-                                   RelativePanel.AlignVerticalCenterWithPanel="True"/>
-                    </RelativePanel>
-                    <RelativePanel Margin="0,0,0,10" 
-                                   Background="White">
-                        <Image x:ConnectionId='5' Name="IsyaIkon"
-                               Margin="5,0,0,0"
-                               Source="Assets/icon malam.png" 
-                               Width="30" 
-                               Height="30" 
-                               RelativePanel.AlignLeftWithPanel="True"/>
-                        <TextBlock Text="Isya"
-                                   Margin="10,0,0,0"
-                                   RelativePanel.RightOf="IsyaIkon"
                                    RelativePanel.AlignVerticalCenterWithPanel="True" />
                         <TextBlock Text="Waktunya" 
                                    Margin="0,0,10,0"

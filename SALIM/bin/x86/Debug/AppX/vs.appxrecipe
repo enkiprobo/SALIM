@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-01-11T11:51:02.083</Modified>
+      <Modified>2016-01-11T20:30:14.080</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -91,7 +91,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x86\Debug\Core\entrypoint\SALIM.exe">
       <PackagePath>entrypoint\SALIM.exe</PackagePath>
-      <Modified>2016-01-11T11:50:59.121</Modified>
+      <Modified>2016-01-11T20:30:13.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x86\Debug\Core\Fonts\Roboto-Black.ttf">
       <PackagePath>Fonts\Roboto-Black.ttf</PackagePath>
@@ -171,15 +171,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-01-11T11:51:00.791</Modified>
+      <Modified>2016-01-11T20:25:04.720</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x86\Debug\Core\SALIM.exe">
       <PackagePath>SALIM.exe</PackagePath>
-      <Modified>2016-01-11T11:51:02.079</Modified>
+      <Modified>2016-01-11T20:30:14.072</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x86\Debug\Core\SALIM.xr.xml">
       <PackagePath>SALIM.xr.xml</PackagePath>
-      <Modified>2016-01-11T11:50:31.871</Modified>
+      <Modified>2016-01-11T20:25:03.745</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
