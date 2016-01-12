@@ -471,3 +471,8 @@ C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x86\Debu
 C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x86\Debug\Core\Assets\icon siang.png
 C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x86\Debug\Core\Assets\bg header langit bintang.png
 C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x86\Debug\Core\Assets\bg header langit bintang.png
+C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x86\Debug\HalamanRiwayat.xbf
+C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x86\Debug\HalamanRiwayat.g.i.cs
+C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x86\Debug\HalamanRiwayat.g.cs
+C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x86\Debug\HalamanRiwayat.xaml
+C:\Users\USERNAME\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x86\Debug\HalamanRiwayat.xbf

@@ -113,6 +113,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HalamanRiwayat.xaml.cs">
+      <DependentUpon>HalamanRiwayat.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HalamanUtama.xaml.cs">
       <DependentUpon>HalamanUtama.xaml</DependentUpon>
     </Compile>
@@ -142,6 +145,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="HalamanRiwayat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="HalamanUtama.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

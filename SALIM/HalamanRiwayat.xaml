@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="SALIM.HalamanRiwayat"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SALIM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFF2F3F3">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <RelativePanel Name="Graph" 
+                           Grid.RowSpan="2" Background="White">
+            </RelativePanel>
+
+            <StackPanel Name="HadistDua"
+                        Grid.Column="1">
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

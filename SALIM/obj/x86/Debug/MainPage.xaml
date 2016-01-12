@@ -53,19 +53,20 @@
                     Canvas.ZIndex="2"
                     Margin="10">
 
-            <TextBlock x:ConnectionId='3' Name="JudulAplikasi" 
+            <TextBlock x:ConnectionId='4' Name="JudulAplikasi" 
                        Margin="0,0,140,0"
                        Text="Salim"
                        Style="{StaticResource Judul}"
                                                     />
-            <Button x:ConnectionId='4' FontFamily="Segoe MDL2 Assets"
+            <Button x:ConnectionId='5' FontFamily="Segoe MDL2 Assets"
                     Content="&#xE700;" 
                     Background="{x:Null}" 
                     BorderBrush="{x:Null}" 
                     HorizontalAlignment="Stretch" 
                     Foreground="White" 
                     FontSize="24"
-                                           VerticalAlignment="Stretch"/>
+                                           
+                    VerticalAlignment="Stretch"/>
         </StackPanel>
         <SplitView x:ConnectionId='1' Name="MenuDiKiri"
                    Grid.Row="1"
@@ -110,7 +111,8 @@
                                           OffContent="" />
                         </StackPanel>
                     </ListBoxItem>
-                    <ListBoxItem>
+                    <ListBoxItem x:ConnectionId='2' Name="TombolRiwayat"
+                                                              >
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Style="{StaticResource IkonFont}"
                                            Text="&#xE8F5;"/>
@@ -121,7 +123,7 @@
                 </ListBox>
             </SplitView.Pane>
             <SplitView.Content>
-                <Frame x:ConnectionId='2' Name="HalamanYangAktif" />
+                <Frame x:ConnectionId='3' Name="HalamanYangAktif" />
             </SplitView.Content>
         </SplitView>
     </Grid>

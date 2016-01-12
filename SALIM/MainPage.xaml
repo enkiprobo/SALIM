@@ -65,7 +65,8 @@
                     HorizontalAlignment="Stretch" 
                     Foreground="White" 
                     FontSize="24"
-                    Tapped="Button_Tapped" VerticalAlignment="Stretch"/>
+                    Tapped="Button_Tapped" 
+                    VerticalAlignment="Stretch"/>
         </StackPanel>
         <SplitView Name="MenuDiKiri"
                    Grid.Row="1"
@@ -110,7 +111,8 @@
                                           OffContent="" />
                         </StackPanel>
                     </ListBoxItem>
-                    <ListBoxItem>
+                    <ListBoxItem Name="TombolRiwayat"
+                                 Tapped="TombolRiwayat_Tapped">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Style="{StaticResource IkonFont}"
                                            Text="&#xE8F5;"/>

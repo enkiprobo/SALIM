@@ -28,7 +28,7 @@ namespace SALIM
             HalamanYangAktif.Navigate(typeof(HalamanUtama));
         }
 
-        private void Button_Tapped(object sender, TappedEventHandler e)
+        private void Button_Tapped(object sender, TappedRoutedEventArgs e)
         {
             MenuDiKiri.IsPaneOpen = !MenuDiKiri.IsPaneOpen;
         }
@@ -36,6 +36,11 @@ namespace SALIM
         private void JudulAplikasi_Tapped(object sender, TappedRoutedEventArgs e)
         {
             HalamanYangAktif.Navigate(typeof(HalamanUtama));
+        }
+
+        private void TombolRiwayat_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            HalamanYangAktif.Navigate(typeof(HalamanRiwayat));
         }
     }
 }
