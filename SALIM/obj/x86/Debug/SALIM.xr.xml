@@ -129,6 +129,7 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="FirstDayOfWeek" />
     </RootType>
     <RootType FullName="SALIM.HalamanUtama" />
     <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
