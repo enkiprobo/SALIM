@@ -171,7 +171,7 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="VerticalAlignment" />
-      <RootEvent Name="Tapped" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="SALIM.MainPage" />
   </Roots.RootTypes>

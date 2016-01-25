@@ -73,8 +73,10 @@
                     HorizontalAlignment="Stretch" 
                     Foreground="White" 
                     FontSize="24"
-                    Tapped="Button_Tapped" 
+                    Click="Button_Click"
                     VerticalAlignment="Stretch"/>
+            <TextBlock x:Name="Height" TextWrapping="Wrap" Text="TextBlock"/>
+            <TextBlock x:Name="Width" TextWrapping="Wrap" Text="TextBlock"/>
         </StackPanel>
         <SplitView Name="MenuDiKiri"
                    Grid.Row="1"

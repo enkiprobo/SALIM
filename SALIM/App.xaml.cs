@@ -49,7 +49,8 @@ namespace SALIM
             // just ensure that the window is active
             if (rootFrame == null)
             {
-                SetTitleBar();
+                // implementasi dari method yang dibuat sendiri
+                setTitleBar();
                 // Create a Frame to act as the navigation context and navigate to the first page
                 rootFrame = new Frame();
 
@@ -74,13 +75,15 @@ namespace SALIM
             // Ensure the current window is active
             Window.Current.Activate();
         }
-        private void SetTitleBar()
+        // di bawah ini merupakan handmade method
+        private void setTitleBar()
         {
             ApplicationViewTitleBar ambilTitleBar = ApplicationView.GetForCurrentView().TitleBar;
             ambilTitleBar.ButtonBackgroundColor = Colors.Transparent;
             CoreApplicationViewTitleBar TitleBarInti = CoreApplication.GetCurrentView().TitleBar;
             TitleBarInti.ExtendViewIntoTitleBar = true;
         }
+        
         /// <summary>
         /// Invoked when Navigation to a certain page fails
         /// </summary>
