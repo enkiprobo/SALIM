@@ -183,12 +183,89 @@
                                    RelativePanel.AlignRightWithPanel="True" 
                                    RelativePanel.AlignVerticalCenterWithPanel="True"/>
                     </RelativePanel>
+                    <RelativePanel Margin="0,0,0,10" 
+                                   Background="White">
+                        <Image Name="DzuhurIkon"
+                               Margin="3,3,0,3"
+                               Source="Assets/icon malam.png" 
+                               Width="40" 
+                               Height="40" 
+                               RelativePanel.AlignLeftWithPanel="True"/>
+                        <TextBlock Text="Shubuh"
+                                   Margin="10,0,0,0"
+                                   RelativePanel.RightOf="DzuhurIkon"
+                                   RelativePanel.AlignVerticalCenterWithPanel="True" />
+                        <TextBlock Text="Waktunya" 
+                                   Margin="0,0,10,0"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   RelativePanel.AlignRightWithPanel="True" 
+                                   RelativePanel.AlignVerticalCenterWithPanel="True"/>
+                    </RelativePanel>
+                    <RelativePanel Margin="0,0,0,10" 
+                                   Background="White">
+                        <Image Name="aShubuhIkon"
+                               Margin="3,3,0,3"
+                               Source="Assets/icon malam.png" 
+                               Width="40" 
+                               Height="40" 
+                               RelativePanel.AlignLeftWithPanel="True"/>
+                        <TextBlock Text="Shubuh"
+                                   Margin="10,0,0,0"
+                                   RelativePanel.RightOf="aShubuhIkon"
+                                   RelativePanel.AlignVerticalCenterWithPanel="True" />
+                        <TextBlock Text="Waktunya" 
+                                   Margin="0,0,10,0"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   RelativePanel.AlignRightWithPanel="True" 
+                                   RelativePanel.AlignVerticalCenterWithPanel="True"/>
+                    </RelativePanel>
+                    <RelativePanel Margin="0,0,0,10" 
+                                   Background="White">
+                        <Image Name="ShuabuhIkon"
+                               Margin="3,3,0,3"
+                               Source="Assets/icon malam.png" 
+                               Width="40" 
+                               Height="40" 
+                               RelativePanel.AlignLeftWithPanel="True"/>
+                        <TextBlock Text="Shubuh"
+                                   Margin="10,0,0,0"
+                                   RelativePanel.RightOf="ShuabuhIkon"
+                                   RelativePanel.AlignVerticalCenterWithPanel="True" />
+                        <TextBlock Text="Waktunya" 
+                                   Margin="0,0,10,0"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   RelativePanel.AlignRightWithPanel="True" 
+                                   RelativePanel.AlignVerticalCenterWithPanel="True"/>
+                    </RelativePanel>
+                    <RelativePanel Margin="0,0,0,10" 
+                                   Background="White">
+                        <Image Name="ShubuhIakon"
+                               Margin="3,3,0,3"
+                               Source="Assets/icon malam.png" 
+                               Width="40" 
+                               Height="40" 
+                               RelativePanel.AlignLeftWithPanel="True"/>
+                        <TextBlock Text="Shubuh"
+                                   Margin="10,0,0,0"
+                                   RelativePanel.RightOf="ShubuhIakon"
+                                   RelativePanel.AlignVerticalCenterWithPanel="True" />
+                        <TextBlock Text="Waktunya" 
+                                   Margin="0,0,10,0"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   RelativePanel.AlignRightWithPanel="True" 
+                                   RelativePanel.AlignVerticalCenterWithPanel="True"/>
+                    </RelativePanel>
+                    
                 </StackPanel>
                 <StackPanel Name="Kalendar"
                             Grid.Column="1"
                             Grid.RowSpan="3"
                             Margin="10" Background="White">
-                    <CalendarView x:Name="KalenderPerbulan" VerticalAlignment="Top" HorizontalAlignment="Center" Height="290" Margin="0,0,-0.4,0" FirstDayOfWeek="Monday" />
+                    <CalendarView x:Name="KalenderPerbulan" VerticalAlignment="Top" HorizontalAlignment="Center" Height="290" Margin="0,0,-0.4,0" FirstDayOfWeek="Monday" AllowDrop="True" SelectedDatesChanged="KalenderPerbulan_SelectedDatesChanged" />
                 </StackPanel>
                 <StackPanel Name="Hadist" 
                             Margin="10"

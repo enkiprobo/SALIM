@@ -13,6 +13,11 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
+using Windows.UI.Notifications;
+using NotificationsExtensions.Toasts; // NotificationsExtensions.Win10
+using Microsoft.QueryStringDotNET; // QueryString.NET
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace SALIM
@@ -25,6 +30,13 @@ namespace SALIM
         public HalamanUtama()
         {
             this.InitializeComponent();
+        }
+
+        private void KalenderPerbulan_SelectedDatesChanged(CalendarView sender, CalendarViewSelectedDatesChangedEventArgs args)
+        {
+            var selectedDate = sender.SelectedDates.Select(p => p.Date.Day.ToString() + "/" + p.Date.Month.ToString() + "/" + p.Date.Year.ToString()).ToArray();
+            var dateSelect = string.Join(",", selectedDate);
+            HariIni.Text = dateSelect;
         }
     }
 }

@@ -203,3 +203,6 @@ C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x64\Debug\q
 C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x64\Debug\ProjectArchitectures.txt
+C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x64\Debug\NotificationsExtensions.winmd
+C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x64\Debug\QueryString.NETCore.dll
+C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x64\Debug\NotificationsExtensions.pri.xml

@@ -130,6 +130,8 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="FirstDayOfWeek" />
+      <RootProperty Name="AllowDrop" />
+      <RootEvent Name="SelectedDatesChanged" />
     </RootType>
     <RootType FullName="SALIM.HalamanUtama" />
     <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
