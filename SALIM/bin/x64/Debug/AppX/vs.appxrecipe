@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>93259f7f-a6c0-4f26-9e9e-2030c4df32e3</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x64\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>CDB92EE858E85C7BD6FA1E82F710459782959D468F93539E67FF5A059D6EA523</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>9D95FE645E198055E712D2AE0C14A204B7C67C8FD3798323BBEE265A471908E3</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>93259f7f-a6c0-4f26-9e9e-2030c4df32e3_1.0.0.0_x64__hz5m5e4aqmafp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>93259f7f-a6c0-4f26-9e9e-2030c4df32e3_hz5m5e4aqmafp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>93259f7f-a6c0-4f26-9e9e-2030c4df32e3</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-02-01T08:23:03.268</Modified>
+      <Modified>2016-02-25T11:14:44.407</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x64\Debug\SALIM.exe">
       <PackagePath>entrypoint\SALIM.exe</PackagePath>
-      <Modified>2016-02-01T08:23:02.769</Modified>
+      <Modified>2016-02-25T11:14:43.953</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -105,6 +105,18 @@
     <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\QueryString.NET\1.0.0\lib\dotnet\QueryString.NETCore.dll">
       <PackagePath>QueryString.NETCore.dll</PackagePath>
       <Modified>2016-01-27T01:01:38.816</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\SQLite.Net-PCL\3.1.1\lib\Windows8\SQLite.Net.Platform.WinRT.dll">
+      <PackagePath>SQLite.Net.Platform.WinRT.dll</PackagePath>
+      <Modified>2016-02-14T13:38:20.546</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\SQLite.Net.Async-PCL\3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.Async.dll">
+      <PackagePath>SQLite.Net.Async.dll</PackagePath>
+      <Modified>2016-02-14T13:38:49.561</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\SQLite.Net.Core-PCL\3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll">
+      <PackagePath>SQLite.Net.dll</PackagePath>
+      <Modified>2016-02-14T13:38:20.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\System.AppContext\4.0.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -458,9 +470,13 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-01-13T23:09:56.292</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\NotificationsExtensions.Win10\10586.0.1\lib\uap10.0\NotificationsExtensions.winmd">
+    <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\NotificationsExtensions.Win10\10586.0.2\lib\uap10.0\NotificationsExtensions.winmd">
       <PackagePath>NotificationsExtensions.winmd</PackagePath>
-      <Modified>2016-02-01T03:50:31.116</Modified>
+      <Modified>2016-02-24T03:48:38.132</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\SQLite.UAP.2015\3.8.11.1\Redist\Debug\x64\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+      <Modified>2016-02-14T13:30:08.117</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\Assets\bg header icon.png">
       <PackagePath>Assets\bg header icon.png</PackagePath>
@@ -564,6 +580,10 @@
       <PackagePath>Fonts\Roboto-ThinItalic.ttf</PackagePath>
       <Modified>2016-01-13T23:04:40.653</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\JadwalSholat.sqlite">
+      <PackagePath>JadwalSholat.sqlite</PackagePath>
+      <Modified>2016-02-23T06:51:19.363</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-01-13T23:04:40.672</Modified>
@@ -578,11 +598,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-02-01T08:01:52.239</Modified>
+      <Modified>2016-02-24T09:15:09.194</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x64\Debug\Core\SALIM.exe">
       <PackagePath>SALIM.exe</PackagePath>
-      <Modified>2016-02-01T08:23:03.267</Modified>
+      <Modified>2016-02-25T11:14:44.401</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

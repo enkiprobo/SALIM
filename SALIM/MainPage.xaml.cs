@@ -16,7 +16,7 @@ using Windows.UI.ViewManagement;
 
 using Windows.UI.Notifications;
 using NotificationsExtensions.Toasts; // NotificationsExtensions.Win10
-using Microsoft.QueryStringDotNET; // QueryString.NET
+
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -30,7 +30,6 @@ namespace SALIM
         public MainPage()
         {
             this.InitializeComponent();
-            
             HalamanYangAktif.Navigate(typeof(HalamanUtama));
         }
 
@@ -47,115 +46,10 @@ namespace SALIM
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MenuDiKiri.IsPaneOpen = !MenuDiKiri.IsPaneOpen;
-            // In a real app, these would be initialized with actual data
-            string title = "Enki sedang berjoget";
-            string content = "Hallo!";
-            string image = "http://blogs.msdn.com/cfs-filesystemfile.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-01-71-81-permanent/2727.happycanyon1_5B00_1_5D00_.jpg";
-            string logo = "ms-appdata:///local/Andrew.jpg";
-            string conversationId = "384928";
-
-            // Construct the visuals of the toast
-            ToastVisual visual = new ToastVisual()
-            {
-                TitleText = new ToastText()
-                {
-                    Text = title
-                },
-
-                BodyTextLine1 = new ToastText()
-                {
-                    Text = content
-                },
-
-                InlineImages =
-                {
-                    new ToastImage()
-                    {
-                        Source = new ToastImageSource(image)
-                    }
-                },
-
-                AppLogoOverride = new ToastAppLogo()
-                {
-                    Source = new ToastImageSource(logo),
-                    Crop = ToastImageCrop.Circle
-                }
-            };
-
-            // Construct the actions for the toast (inputs and buttons)
-            ToastActionsCustom actions = new ToastActionsCustom()
-            {
-                Inputs =
-                {
-                    new ToastTextBox("tbReply")
-                    {
-                        PlaceholderContent = "Type a response"
-                    }
-                },
-
-                Buttons =
-                {
-                    new ToastButton("Reply", new QueryString()
-                    {
-                        { "action", "reply" },
-                        { "conversationId", conversationId.ToString() }
-
-                    }.ToString())
-                    {
-                        ActivationType = ToastActivationType.Background,
-                        ImageUri = "Assets/Reply.png",
-
-                        // Reference the text box's ID in order to
-                        // place this button next to the text box
-                        TextBoxId = "tbReply"
-                    },
-
-                    new ToastButton("Like", new QueryString()
-                    {
-                        { "action", "like" },
-                        { "conversationId", conversationId.ToString() }
-
-                    }.ToString())
-                    {
-                        ActivationType = ToastActivationType.Background
-                    },
-
-                    new ToastButton("View", new QueryString()
-                    {
-                        { "action", "viewImage" },
-                        { "imageUrl", image }
-
-                    }.ToString())
-                }
-            };
-
-
-            // Now we can construct the final toast content
-            ToastContent toastContent = new ToastContent()
-            {
-                Visual = visual,
-                Actions = actions,
-
-                // Arguments when the user taps body of toast
-                Launch = new QueryString()
-                {
-                    { "action", "viewConversation" },
-                    { "conversationId", conversationId.ToString() }
-
-                }.ToString()
-            };
-
-
-            // And create the toast notification
-            ToastNotification notification = new ToastNotification(toastContent.GetXml());
-
-
-            // And then send the toast
-            ToastNotificationManager.CreateToastNotifier().Show(notification);
         }
 
         // method-method yang dibuat sesuai kebutuhan
-        private void setAppWindowSize()
+        /*private void setAppWindowSize()
         {
             var halamanSaatIni = ApplicationView.GetForCurrentView();
             if (halamanSaatIni.IsFullScreenMode) halamanSaatIni.ExitFullScreenMode();
@@ -163,6 +57,6 @@ namespace SALIM
             halamanSaatIni.SetPreferredMinSize(new Size(500, 500));
             ApplicationView.PreferredLaunchViewSize = new Size(500, 700);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
-        }
+        }*/
     }
 }

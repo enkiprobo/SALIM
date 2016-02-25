@@ -78,6 +78,15 @@
     <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\QueryString.NET\1.0.0\lib\dotnet\QueryString.NETCore.dll">
       <PackagePath>QueryString.NETCore.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\SQLite.Net-PCL\3.1.1\lib\Windows8\SQLite.Net.Platform.WinRT.dll">
+      <PackagePath>SQLite.Net.Platform.WinRT.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\SQLite.Net.Async-PCL\3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.Async.dll">
+      <PackagePath>SQLite.Net.Async.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\SQLite.Net.Core-PCL\3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll">
+      <PackagePath>SQLite.Net.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\System.AppContext\4.0.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
     </AppxPackagedFile>
@@ -342,8 +351,11 @@
     <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\NotificationsExtensions.Win10\10586.0.1\lib\uap10.0\NotificationsExtensions.winmd">
+    <AppxPackagedFile Include="C:\Users\enkia\.nuget\packages\NotificationsExtensions.Win10\10586.0.2\lib\uap10.0\NotificationsExtensions.winmd">
       <PackagePath>NotificationsExtensions.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\SQLite.UAP.2015\3.8.11.1\Redist\Debug\x64\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\Assets\bg header icon.png">
       <PackagePath>Assets\bg header icon.png</PackagePath>
@@ -422,6 +434,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\Fonts\Roboto-ThinItalic.ttf">
       <PackagePath>Fonts\Roboto-ThinItalic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\JadwalSholat.sqlite">
+      <PackagePath>JadwalSholat.sqlite</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

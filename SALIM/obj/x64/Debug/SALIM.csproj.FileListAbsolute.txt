@@ -206,3 +206,6 @@ C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x64\Debug\P
 C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x64\Debug\NotificationsExtensions.winmd
 C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x64\Debug\QueryString.NETCore.dll
 C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x64\Debug\NotificationsExtensions.pri.xml
+C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x64\Debug\SQLite.Net.Platform.WinRT.dll
+C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x64\Debug\SQLite.Net.Async.dll
+C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x64\Debug\SQLite.Net.dll

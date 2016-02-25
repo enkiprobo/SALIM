@@ -106,13 +106,13 @@
         <RelativePanel Canvas.ZIndex="2"
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center">
-            <TextBlock x:ConnectionId='11' Name="HariIni" 
+            <TextBlock x:ConnectionId='16' Name="HariIni" 
                        Text="Tanggal" 
                        TextAlignment="Center" 
                        Foreground="White" 
-                       RelativePanel.Above="JamSholat"
+                       RelativePanel.Above="JamHariIni"
                        RelativePanel.AlignHorizontalCenterWithPanel="True"/>
-            <TextBlock x:ConnectionId='12' Name="JamSholat" 
+            <TextBlock x:ConnectionId='17' x:Name="JamHariIni" 
                        Text="jamnya" 
                        TextAlignment="Center" 
                        Foreground="White" 
@@ -120,7 +120,7 @@
                        RelativePanel.AlignHorizontalCenterWithPanel="True"
                        Margin="0,5,0,30"
                        />
-            <TextBlock x:ConnectionId='13' Name="NamaSholat"
+            <TextBlock x:ConnectionId='18' Name="NamaSholat"
                        Text="Sholatnya" 
                        TextAlignment="Center" 
                        Foreground="White"
@@ -142,7 +142,7 @@
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock x:ConnectionId='10' Name="KataAjakan" 
+            <TextBlock x:ConnectionId='15' Name="KataAjakan" 
                        Text="Yuk, Salat tepat waktu!" 
                        Margin="0,5,0,0" 
                        HorizontalAlignment="Center" 
@@ -164,95 +164,100 @@
                 <StackPanel x:ConnectionId='1' Name="JadwalSholat"
                             Grid.RowSpan="3"
                             Margin="10">
-                    <RelativePanel Margin="0,0,0,10" 
+                    <!--1--><RelativePanel Margin="0,0,0,10" 
                                    Background="White">
-                        <Image x:ConnectionId='9' Name="ShubuhIkon"
+                        <Image x:ConnectionId='13' Name="IkonSubuh"
                                Margin="3,3,0,3"
                                Source="Assets/icon malam.png" 
                                Width="40" 
                                Height="40" 
                                RelativePanel.AlignLeftWithPanel="True"/>
-                        <TextBlock Text="Shubuh"
+                        <TextBlock Text="Subuh"
                                    Margin="10,0,0,0"
-                                   RelativePanel.RightOf="ShubuhIkon"
+                                   RelativePanel.RightOf="IkonSubuh"
                                    RelativePanel.AlignVerticalCenterWithPanel="True" />
-                        <TextBlock Text="Waktunya" 
+                        <TextBlock x:ConnectionId='14' Name="WaktuSubuh"
+                                   Text="Waktunya" 
                                    Margin="0,0,10,0"
                                    HorizontalAlignment="Center" 
                                    VerticalAlignment="Center" 
                                    RelativePanel.AlignRightWithPanel="True" 
                                    RelativePanel.AlignVerticalCenterWithPanel="True"/>
                     </RelativePanel>
-                    <RelativePanel Margin="0,0,0,10" 
+                    <!--2--><RelativePanel Margin="0,0,0,10" 
                                    Background="White">
-                        <Image x:ConnectionId='8' Name="DzuhurIkon"
+                        <Image x:ConnectionId='11' Name="IkonZuhur"
                                Margin="3,3,0,3"
-                               Source="Assets/icon malam.png" 
+                               Source="Assets/icon siang.png" 
                                Width="40" 
                                Height="40" 
                                RelativePanel.AlignLeftWithPanel="True"/>
-                        <TextBlock Text="Shubuh"
+                        <TextBlock Text="Zuhur"
                                    Margin="10,0,0,0"
-                                   RelativePanel.RightOf="DzuhurIkon"
+                                   RelativePanel.RightOf="IkonZuhur"
                                    RelativePanel.AlignVerticalCenterWithPanel="True" />
-                        <TextBlock Text="Waktunya" 
+                        <TextBlock x:ConnectionId='12' Name="WaktuZuhur"
+                                   Text="Waktunya" 
                                    Margin="0,0,10,0"
                                    HorizontalAlignment="Center" 
                                    VerticalAlignment="Center" 
                                    RelativePanel.AlignRightWithPanel="True" 
                                    RelativePanel.AlignVerticalCenterWithPanel="True"/>
                     </RelativePanel>
-                    <RelativePanel Margin="0,0,0,10" 
+                    <!--3--><RelativePanel Margin="0,0,0,10" 
                                    Background="White">
-                        <Image x:ConnectionId='7' Name="aShubuhIkon"
+                        <Image x:ConnectionId='9' Name="IkonAshar"
                                Margin="3,3,0,3"
-                               Source="Assets/icon malam.png" 
+                               Source="Assets/icon siang.png" 
                                Width="40" 
                                Height="40" 
                                RelativePanel.AlignLeftWithPanel="True"/>
-                        <TextBlock Text="Shubuh"
+                        <TextBlock Text="Ashar"
                                    Margin="10,0,0,0"
-                                   RelativePanel.RightOf="aShubuhIkon"
+                                   RelativePanel.RightOf="IkonAshar"
                                    RelativePanel.AlignVerticalCenterWithPanel="True" />
-                        <TextBlock Text="Waktunya" 
+                        <TextBlock x:ConnectionId='10' Name="WaktuAshar"
+                                   Text="Waktunya" 
                                    Margin="0,0,10,0"
                                    HorizontalAlignment="Center" 
                                    VerticalAlignment="Center" 
                                    RelativePanel.AlignRightWithPanel="True" 
                                    RelativePanel.AlignVerticalCenterWithPanel="True"/>
                     </RelativePanel>
-                    <RelativePanel Margin="0,0,0,10" 
+                    <!--4--><RelativePanel Margin="0,0,0,10" 
                                    Background="White">
-                        <Image x:ConnectionId='6' Name="ShuabuhIkon"
+                        <Image x:ConnectionId='7' Name="IkonMaghrib"
                                Margin="3,3,0,3"
-                               Source="Assets/icon malam.png" 
+                               Source="Assets/icon siang.png" 
                                Width="40" 
                                Height="40" 
                                RelativePanel.AlignLeftWithPanel="True"/>
-                        <TextBlock Text="Shubuh"
+                        <TextBlock Text="Maghrib"
                                    Margin="10,0,0,0"
-                                   RelativePanel.RightOf="ShuabuhIkon"
+                                   RelativePanel.RightOf="IkonMaghrib"
                                    RelativePanel.AlignVerticalCenterWithPanel="True" />
-                        <TextBlock Text="Waktunya" 
+                        <TextBlock x:ConnectionId='8' Name="WaktuMaghrib"
+                                   Text="Waktunya" 
                                    Margin="0,0,10,0"
                                    HorizontalAlignment="Center" 
                                    VerticalAlignment="Center" 
                                    RelativePanel.AlignRightWithPanel="True" 
                                    RelativePanel.AlignVerticalCenterWithPanel="True"/>
                     </RelativePanel>
-                    <RelativePanel Margin="0,0,0,10" 
+                    <!--5--><RelativePanel Margin="0,0,0,10" 
                                    Background="White">
-                        <Image x:ConnectionId='5' Name="ShubuhIakon"
+                        <Image x:ConnectionId='5' Name="IkonIsya"
                                Margin="3,3,0,3"
                                Source="Assets/icon malam.png" 
                                Width="40" 
                                Height="40" 
                                RelativePanel.AlignLeftWithPanel="True"/>
-                        <TextBlock Text="Shubuh"
+                        <TextBlock Text="Isya"
                                    Margin="10,0,0,0"
-                                   RelativePanel.RightOf="ShubuhIakon"
+                                   RelativePanel.RightOf="IkonIsya"
                                    RelativePanel.AlignVerticalCenterWithPanel="True" />
-                        <TextBlock Text="Waktunya" 
+                        <TextBlock x:ConnectionId='6' Name="WaktuIsya" 
+                                   Text="Waktunya" 
                                    Margin="0,0,10,0"
                                    HorizontalAlignment="Center" 
                                    VerticalAlignment="Center" 

@@ -1,13 +1,16 @@
-﻿using System;
+﻿using SQLite.Net;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
@@ -26,6 +29,8 @@ namespace SALIM
     
     sealed partial class App : Application
     {
+        public String path;
+        public static SQLiteConnection konek;
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -44,13 +49,16 @@ namespace SALIM
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
             Frame rootFrame = Window.Current.Content as Frame;
-
+            
             // Do not repeat app initialization when the Window already has content,
             // just ensure that the window is active
             if (rootFrame == null)
             {
                 // implementasi dari method yang dibuat sendiri
                 setTitleBar();
+                CopyDatabase();
+                path = Path.Combine(ApplicationData.Current.LocalFolder.Path, "JadwalSholat.sqlite");
+                konek = new SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
                 // Create a Frame to act as the navigation context and navigate to the first page
                 rootFrame = new Frame();
 
@@ -106,6 +114,26 @@ namespace SALIM
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: Save application state and stop any background activity
             deferral.Complete();
+        }
+        private async Task CopyDatabase()
+        {
+            bool isDatabaseExisting = false;
+
+            try
+            {
+                StorageFile storageFile = await ApplicationData.Current.LocalFolder.GetFileAsync("JadwalSholat.sqlite");
+                isDatabaseExisting = true;
+            }
+            catch
+            {
+                isDatabaseExisting = false;
+            }
+
+            if (!isDatabaseExisting)
+            {
+                StorageFile databaseFile = await Package.Current.InstalledLocation.GetFileAsync("JadwalSholat.sqlite");
+                await databaseFile.CopyAsync(ApplicationData.Current.LocalFolder);
+            }
         }
     }
 }
