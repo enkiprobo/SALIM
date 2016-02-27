@@ -132,19 +132,21 @@ namespace SALIM.SALIM_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
-            _typeNameTable[0] = "SALIM.HalamanRiwayat";
+            _typeNameTable = new string[6];
+            _typeNameTable[0] = "SALIM.CountDownUI";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "SALIM.HalamanUtama";
-            _typeNameTable[4] = "SALIM.MainPage";
+            _typeNameTable[3] = "SALIM.HalamanRiwayat";
+            _typeNameTable[4] = "SALIM.HalamanUtama";
+            _typeNameTable[5] = "SALIM.MainPage";
 
-            _typeTable = new global::System.Type[5];
-            _typeTable[0] = typeof(global::SALIM.HalamanRiwayat);
+            _typeTable = new global::System.Type[6];
+            _typeTable[0] = typeof(global::SALIM.CountDownUI);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::SALIM.HalamanUtama);
-            _typeTable[4] = typeof(global::SALIM.MainPage);
+            _typeTable[3] = typeof(global::SALIM.HalamanRiwayat);
+            _typeTable[4] = typeof(global::SALIM.HalamanUtama);
+            _typeTable[5] = typeof(global::SALIM.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,9 +181,10 @@ namespace SALIM.SALIM_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_HalamanRiwayat() { return new global::SALIM.HalamanRiwayat(); }
-        private object Activate_3_HalamanUtama() { return new global::SALIM.HalamanUtama(); }
-        private object Activate_4_MainPage() { return new global::SALIM.MainPage(); }
+        private object Activate_0_CountDownUI() { return new global::SALIM.CountDownUI(); }
+        private object Activate_3_HalamanRiwayat() { return new global::SALIM.HalamanRiwayat(); }
+        private object Activate_4_HalamanUtama() { return new global::SALIM.HalamanUtama(); }
+        private object Activate_5_MainPage() { return new global::SALIM.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -193,9 +196,9 @@ namespace SALIM.SALIM_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  SALIM.HalamanRiwayat
+            case 0:   //  SALIM.CountDownUI
                 userType = new global::SALIM.SALIM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_HalamanRiwayat;
+                userType.Activator = Activate_0_CountDownUI;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -208,16 +211,23 @@ namespace SALIM.SALIM_XamlTypeInfo
                 xamlType = new global::SALIM.SALIM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  SALIM.HalamanUtama
+            case 3:   //  SALIM.HalamanRiwayat
                 userType = new global::SALIM.SALIM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_HalamanUtama;
+                userType.Activator = Activate_3_HalamanRiwayat;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  SALIM.MainPage
+            case 4:   //  SALIM.HalamanUtama
                 userType = new global::SALIM.SALIM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_MainPage;
+                userType.Activator = Activate_4_HalamanUtama;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  SALIM.MainPage
+                userType = new global::SALIM.SALIM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

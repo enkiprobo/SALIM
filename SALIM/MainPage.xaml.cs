@@ -30,7 +30,7 @@ namespace SALIM
         public MainPage()
         {
             this.InitializeComponent();
-            HalamanYangAktif.Navigate(typeof(HalamanUtama));
+            HalamanYangAktif.Navigate(typeof(CountDownUI));
         }
 
         private void JudulAplikasi_Tapped(object sender, TappedRoutedEventArgs e)

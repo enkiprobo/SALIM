@@ -36,7 +36,6 @@ namespace SALIM
         jadwalSholat jadwalSholatHariIni;
         DispatcherTimer jamMenitDetik = new DispatcherTimer();
         String waktuSalatYangAkanDatang;
-        Windows.Data.Xml.Dom.XmlDocument Notifikasinya;
         public HalamanUtama()
         {
             this.InitializeComponent();

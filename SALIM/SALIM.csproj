@@ -114,6 +114,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CountDownUI.xaml.cs">
+      <DependentUpon>CountDownUI.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HalamanRiwayat.xaml.cs">
       <DependentUpon>HalamanRiwayat.xaml</DependentUpon>
     </Compile>
@@ -147,6 +150,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CountDownUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="HalamanRiwayat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

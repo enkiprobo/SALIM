@@ -209,3 +209,8 @@ C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x64\Debug\N
 C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x64\Debug\SQLite.Net.Platform.WinRT.dll
 C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x64\Debug\SQLite.Net.Async.dll
 C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x64\Debug\SQLite.Net.dll
+C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\bin\x64\Debug\CountDownUI.xbf
+C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x64\Debug\CountDownUI.g.i.cs
+C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x64\Debug\CountDownUI.g.cs
+C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x64\Debug\CountDownUI.xaml
+C:\Users\enkia\Documents\Visual Studio 2015\Projects\SALIM\SALIM\obj\x64\Debug\CountDownUI.xbf
